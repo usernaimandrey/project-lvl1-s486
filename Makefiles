@@ -1,0 +1,7 @@
+install: 
+         npm install
+start: 
+         npx babel-node src/bin/shlyapnikovbrain-games.js
+
+publish: 
+         npm publish
