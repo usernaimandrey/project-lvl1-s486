@@ -2,9 +2,17 @@
   "name": "shlyapnikovbrain-games",
   "version": "1.0.0",
   "description": "",
-  "main": "shlyapnikovbrain-games.js",
+  "main": "dist/shlyapnikovbrain-games.js",
+  "bin": {
+    "brain-games": "dist/bin/shlyapnikovbrain-games.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
