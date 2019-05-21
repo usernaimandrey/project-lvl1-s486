@@ -1,10 +1,11 @@
 {
   "name": "shlyapnikovbrain-games",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/index.js",
   "bin": {
-    "brain-games": "dist/bin/shlyapnikovbrain-games.js"
+    "brain-games": "dist/bin/shlyapnikovbrain-games.js",
+    "brain-even": "dist/bin/shlyapnikovbrain-even.js"
   },
   "files": [
     "dist"
