@@ -6,3 +6,5 @@
 ![Иллюстрация к проекту](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/brain-calc.gif)
 
 ![Иллюстрация к проекту](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/brain-gcd.gif)
+
+![Иллюстрация к проекту](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/brain-rogression.gif)
