@@ -7,6 +7,6 @@
 
 ![Иллюстрация к проекту](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/brain-gcd.gif)
 
-
+![Иллюстрация к проекту](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/Brain-progression.gif)
 
 ![Иллюстрация к проекту](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/brain-prime.gif)
