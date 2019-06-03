@@ -16,12 +16,11 @@ for (let i = 1; i <= 3; i += 1) {
     }
     return greatestCommonDivisor(numbMin, numbMax % numbMin);
   };
-  const regreatestCommonDivisor = greatestCommonDivisor(numbMax, numbMin);
   const anserQuestion = readlineSync.question(`Question: ${numberRndone} ${numberRndtow} \n Your answer: `);
-  if (anserQuestion === regreatestCommonDivisor.toString()) {
+  if (anserQuestion === greatestCommonDivisor(numbMax, numbMin).toString()) {
     console.log('Correct!');
   } else {
-    console.log(`${anserQuestion} is wrong answer ;(. Correct answer was ${regreatestCommonDivisor}.\n Let's try again, ${question}!`);
+    console.log(`${anserQuestion} is wrong answer ;(. Correct answer was ${greatestCommonDivisor(numbMax, numbMin)}.\n Let's try again, ${question}!`);
     break;
   }
   if (push === 3) {

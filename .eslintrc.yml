@@ -1,6 +1,5 @@
 env:
   node: true
-  jest: true
 
 # https://github.com/babel/babel-eslint
 parser: babel-eslint
@@ -8,6 +7,5 @@ parser: babel-eslint
 extends:
   - 'airbnb-base'
  
-
 rules:
   no-console: 0

@@ -8,7 +8,7 @@ let push = 0;
 for (let j = 1; j <= 3; j += 1) {
   push += 1;
   const numberRndone = Math.floor(Math.random() * (100 - 1 + 1));
-  const prime = (numberRndone) => {
+  const prime = () => {
     if (numberRndone === 2) {
       return true;
     }
@@ -23,7 +23,6 @@ for (let j = 1; j <= 3; j += 1) {
       }
     }
   };
-  prime(numberRndone);
   const answerquestion = readlineSync.question(`Question: ${numberRndone} \n Your answer: `);
   if (answerquestion === 'yes' && prime(numberRndone) === true) {
     console.log('Correct!');
