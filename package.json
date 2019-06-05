@@ -1,12 +1,13 @@
 {
   "name": "shlyapnikovbrain-games",
   "version": "1.1.6",
-  "description": "progekt Hexlet Brain games",
+  "description": "projekt Hexlet Brain games",
   "keywords": [
     "shlyapnikov",
-    "brain-games"
+    "brain-games",
+    "hexlet"
   ],
-  "main": "dist/index.js",
+  "main":"",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
