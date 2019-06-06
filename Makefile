@@ -4,6 +4,6 @@ start:
 install-deps:
 	npm install
 lint:
-	npx eslint 
+	npx eslint .
 
 
