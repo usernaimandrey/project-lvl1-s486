@@ -1,30 +1,17 @@
-import readlineSync from 'readline-sync';
+import proces from '..';
+import generateNumber from '../generaitlib';
 
-export default () => {
-  const rullesCalc = 'What is the result of the expression?';
-  console.log(`Welcome to the Brain Games!\n ${rullesCalc}\n`);
-  const question = readlineSync.question('May I have your name? : ');
-  console.log(`Hello ${question} !\n`);
-  let push = 0;
-  for (let i = 1; i <= 3; i += 1) {
-    push += 1;
-    const numberRndone = Math.floor(Math.random() * (100 - (-100)) + (-100));
-    const numberRndtow = Math.floor(Math.random() * (100 - (-100)) + (-100));
-    const arrArifmet = [`${numberRndone} + ${numberRndtow}`, `${numberRndone} * ${numberRndtow}`, `${numberRndone} - ${numberRndtow}`];
-    const arrValue = [numberRndone + numberRndtow,
-      numberRndone * numberRndtow, numberRndone - numberRndtow];
-    const indexArr = Math.floor(Math.random() * arrArifmet.length);
-    const elementarrArifmet = arrArifmet[indexArr];
-    const elementArrValue = arrValue[indexArr];
-    const anserQuestion = readlineSync.question(`Question: ${elementarrArifmet} \n Your answer: `);
-    if (anserQuestion === elementArrValue.toString()) {
-      console.log('Correct!');
-    } else {
-      console.log(`${anserQuestion} is wrong answer ;(. Correct answer was ${elementArrValue}.\n Let's try again, ${question}!`);
-      break;
-    }
-    if (push === 3) {
-      console.log(`Congratulations, ${question}!`);
-    }
-  }
+
+const description = 'What is the result of the expression?';
+const dataFlow = () => {
+  const numberRndone = generateNumber();
+  const numberRndtow = generateNumber();
+  const arrArifmet = [`${numberRndone} + ${numberRndtow}`, `${numberRndone} * ${numberRndtow}`, `${numberRndone} - ${numberRndtow}`];
+  const arrValue = [numberRndone + numberRndtow,
+    numberRndone * numberRndtow, numberRndone - numberRndtow];
+  const indexArr = Math.floor(Math.random() * arrArifmet.length);
+  const question = arrArifmet[indexArr];
+  const rightAnswer = arrValue[indexArr].toString();
+  return [question, rightAnswer];
 };
+export default () => proces(description, dataFlow);
