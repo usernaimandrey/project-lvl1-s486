@@ -5,11 +5,11 @@ const haveYourName = () => {
   console.log(`Hello ${userName}!\n`);
   return userName;
 };
+const numberOfRounds = 3;
 const process = (description, dataFlow) => {
   console.log('Welcome to the Brain Games!');
   console.log(description);
   const userName = haveYourName();
-  const numberOfRounds = 3;
   for (let i = 1; i <= numberOfRounds; i += 1) {
     const [question, rightAnswer] = dataFlow();
     console.log(`Question: ${question}`);
