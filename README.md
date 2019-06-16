@@ -1,21 +1,21 @@
-# project-lvl1-s486 Brain-games
-Brain Games This is a collection of 5 games:
+#  **Brain-games**
+## **Brain Games This is a collection of 5 games:**
 
-Brain: Even - guess even or not even number
+1. Brain: Even - guess even or not even number
 
-Brain: Calc - test your basic math skills
+2. Brain: Calc - test your basic math skills
 
-Brain: GCD - find the greatest common divisor
+3. Brain: GCD - find the greatest common divisor
 
-Brain: Prime - count a prime number or not 
+4. Brain: Prime - count a prime number or not 
 
-Brain: Progression - write the missing number in progression
+5. Brain: Progression - write the missing number in progression
 
-How to Install games
+## *How to Install games*
 
  npm install -g shlyapnikovbrain-games@1.1.6
  
-How to Use
+## *How to Use*
 
 Type to CLI: brain-<name of the game>. For example:
 
@@ -29,22 +29,22 @@ $ brain-progression
 
 <a href="https://codeclimate.com/github/usernaimandrey/project-lvl1-s486/maintainability"><img src="https://api.codeclimate.com/v1/badges/4c6589cdf8f949b85b89/maintainability" /></a>
 
-                       Game Brain-even
+                        Game Brain-even
                        
-![Иллюстрация к проекту](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/Brain-even.gif)
+![Game Brain-even](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/Brain-even.gif)
 
                         Game Brain-calc
 
-![Иллюстрация к проекту](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/brain-calc.gif)
+![Game Brain-calc](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/brain-calc.gif)
 
                          Game Brain-gcd
 
-![Иллюстрация к проекту](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/brain-gcd.gif)
+![Game Brain-gcd](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/brain-gcd.gif)
 
-                      Game Brain-progression
+                       Game Brain-progression
 
-![Иллюстрация к проекту](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/Brain-progression.gif)
+![Game Brain-progression](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/Brain-progression.gif)
 
                           Game Brain-prime
 
-![Иллюстрация к проекту](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/brain-prime.gif)
+![Game Brain-prime](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/brain-prime.gif)
