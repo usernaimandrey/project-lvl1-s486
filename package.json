@@ -7,7 +7,7 @@
     "brain-games",
     "hexlet"
   ],
-  "main":"",
+  "main": "",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
@@ -38,11 +38,11 @@
     "@babel/core": "^7.4.5",
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^10.0.2",
     "cross-env": "^5.2.0",
-    "eslint-plugin-import": "^2.17.3",
-    "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
     "hexlet-pairs": "^1.0.8"
   },
   "dependencies": {
