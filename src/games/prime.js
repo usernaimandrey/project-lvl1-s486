@@ -1,21 +1,21 @@
-import proces from '..';
-import generateNumber from '../generaitlib';
+import process from '..';
+import generateNumber from '../utils';
 
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
-const isPrime = (numb) => {
-  if (numb < 2) return false;
-  const maxDivider = numb / 2;
+const isPrime = (number) => {
+  if (number < 2) return false;
+  const maxDivider = number / 2;
   for (let divider = 2; divider < maxDivider; divider += 1) {
-    if (numb % divider === 0) {
+    if (number % divider === 0) {
       return false;
     }
   }
   return true;
 };
 const dataFlow = () => {
-  const question = generateNumber();
+  const question = generateNumber(1, 20);
   const rightAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, rightAnswer];
 };
-export default () => proces(description, dataFlow);
+export default () => process(description, dataFlow);

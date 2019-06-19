@@ -1,5 +1,5 @@
-import proces from '..';
-import generateNumber from '../generaitlib';
+import process from '..';
+import generateNumber from '../utils';
 
 const description = 'Find the greatest common divisor of given numbers.';
 const greatestCommonDivisor = (numbone, numbtow) => {
@@ -10,10 +10,10 @@ const greatestCommonDivisor = (numbone, numbtow) => {
     Math.min(numbone, numbtow));
 };
 const dataFlow = () => {
-  const numberRndone = generateNumber();
-  const numberRndtow = generateNumber();
+  const numberRndone = generateNumber(1, 100);
+  const numberRndtow = generateNumber(1, 100);
   const rightAnswer = `${greatestCommonDivisor(numberRndone, numberRndtow)}`;
   const question = `${numberRndone} ${numberRndtow}`;
   return [question, rightAnswer];
 };
-export default () => proces(description, dataFlow);
+export default () => process(description, dataFlow);

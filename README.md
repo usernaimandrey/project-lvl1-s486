@@ -1,4 +1,8 @@
 #  **Brain-games**
+[![Build Status](https://travis-ci.org/usernaimandrey/project-lvl1-s486.svg?branch=master)](https://travis-ci.org/usernaimandrey/project-lvl1-s486)
+
+<a href="https://codeclimate.com/github/usernaimandrey/project-lvl1-s486/maintainability"><img src="https://api.codeclimate.com/v1/badges/4c6589cdf8f949b85b89/maintainability" /></a>
+
 ## **Brain Games This is a collection of 5 games:**
 
 1. Brain: Even - guess even or not even number
@@ -25,9 +29,6 @@ or
 
 $ brain-progression
 
-[![Build Status](https://travis-ci.org/usernaimandrey/project-lvl1-s486.svg?branch=master)](https://travis-ci.org/usernaimandrey/project-lvl1-s486)
-
-<a href="https://codeclimate.com/github/usernaimandrey/project-lvl1-s486/maintainability"><img src="https://api.codeclimate.com/v1/badges/4c6589cdf8f949b85b89/maintainability" /></a>
 
                         Game Brain-even
                        
