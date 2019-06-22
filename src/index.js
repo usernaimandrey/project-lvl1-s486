@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const getNameUser = () => {
+const NamePlayer = () => {
   const userName = readlineSync.question('May I have your name? : ');
   console.log(`Hello ${userName}!\n`);
   return userName;
@@ -10,7 +10,7 @@ const numberOfRounds = 3;
 const process = (description, dataFlow) => {
   console.log('Welcome to the Brain Games!');
   console.log(description);
-  const userName = getNameUser();
+  const userName = NamePlayer();
 
   for (let i = 1; i <= numberOfRounds; i += 1) {
     const [question, rightAnswer] = dataFlow();
@@ -27,4 +27,5 @@ const process = (description, dataFlow) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
+
 export default process;
