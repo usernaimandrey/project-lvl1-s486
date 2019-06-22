@@ -2,16 +2,25 @@ import process from '..';
 import generateNumber from '../utils';
 
 const description = 'What number is missing in the progression?';
+const length = 10;
+
 const dataFlow = () => {
-  const question = [];
-  const numberOfElementsProgression = 10;
-  const startElrment = generateNumber(1, 100);
-  const stepOfPrpgression = 1 + generateNumber(1, 3);
-  for (let i = 1, j = 0; i <= numberOfElementsProgression; i += 1, j += stepOfPrpgression) {
-    question.push(startElrment + j);
+  const hiddenElement = generateNumber(0, length - 1);
+  const startElement = generateNumber(1, 50);
+  const stepOfPrpgression = generateNumber(1, 4);
+
+  const rightAnswer = `${startElement + stepOfPrpgression * hiddenElement}`;
+  const progression = [];
+  let question = '';
+
+  for (let i = 0; i <= length; i += 1) {
+    progression.push(startElement + stepOfPrpgression * i);
+    if (i === hiddenElement) {
+      progression[hiddenElement] = '..';
+    }
+    question += `${progression[i]} `;
   }
-  const startindex = Math.floor(Math.random() * 10 - 1 + 1);
-  const rightAnswer = question.splice(startindex, 1, '..').toString();
   return [question, rightAnswer];
 };
+
 export default () => process(description, dataFlow);
