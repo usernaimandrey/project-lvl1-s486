@@ -1,4 +1,5 @@
-#  **Brain-games**
+# **Brain-games**
+
 [![Build Status](https://travis-ci.org/usernaimandrey/project-lvl1-s486.svg?branch=master)](https://travis-ci.org/usernaimandrey/project-lvl1-s486)
 
 <a href="https://codeclimate.com/github/usernaimandrey/project-lvl1-s486/maintainability"><img src="https://api.codeclimate.com/v1/badges/4c6589cdf8f949b85b89/maintainability" /></a>
@@ -11,17 +12,17 @@
 
 3. Brain: GCD - find the greatest common divisor
 
-4. Brain: Prime - count a prime number or not 
+4. Brain: Prime - count a prime number or not
 
 5. Brain: Progression - write the missing number in progression
 
 ## *How to Install games*
 
  npm install -g shlyapnikovbrain-games@1.1.6
- 
+
 ## *How to Use*
 
-Type to CLI: brain-<name of the game>. For example:
+Type to CLI: brain - 'name of the game'. For example:
 
 $ brain-calc
 
@@ -29,9 +30,8 @@ or
 
 $ brain-progression
 
-
                         Game Brain-even
-                       
+
 ![Game Brain-even](https://github.com/usernaimandrey/usernameandrey.github.io/blob/master/Brain-even.gif)
 
                         Game Brain-calc

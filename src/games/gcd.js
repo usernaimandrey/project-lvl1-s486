@@ -13,10 +13,10 @@ const greatestCommonDivisor = (a, b) => {
 };
 
 const dataFlow = () => {
-  const c = generateNumber(1, 30);
-  const d = generateNumber(1, 30);
-  const rightAnswer = `${greatestCommonDivisor(c, d)}`;
-  const question = `${c} ${d}`;
+  const numberOne = generateNumber(1, 30);
+  const numberTwo = generateNumber(1, 30);
+  const rightAnswer = `${greatestCommonDivisor(numberOne, numberTwo)}`;
+  const question = `${numberOne} ${numberTwo}`;
   return [question, rightAnswer];
 };
 
